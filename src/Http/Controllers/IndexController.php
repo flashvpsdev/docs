@@ -41,6 +41,8 @@ class IndexController extends Controller
                 });
             });
 
+        SEO::opengraph()->setType('article');
+        SEO::opengraph()->setUrl($request->url());
         SEO::setDescription(Str::of(strip_tags($content))
             ->replace("\n", '. ')
             ->replace('. . ', '. ')
