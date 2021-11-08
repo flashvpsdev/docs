@@ -1,0 +1,54 @@
+{
+    "name": "flashvps/docs",
+    "description": "Doc for flashvps.dev",
+    "keywords": [
+        "docs",
+        "laravel",
+        "docs"
+    ],
+    "homepage": "https://github.com/docs/docs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nguyen Tran Chung",
+            "email": "nguyentranchung52th@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/contracts": "^8.37",
+        "spatie/laravel-package-tools": "^1.4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "FlashVps\\Docs\\": "src",
+            "FlashVps\\Docs\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FlashVps\\Docs\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse",
+        "test": "./vendor/bin/testbench package:test --parallel --no-coverage",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FlashVps\\Docs\\DocsServiceProvider"
+            ],
+            "aliases": {
+                "Docs": "FlashVps\\Docs\\DocsFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
