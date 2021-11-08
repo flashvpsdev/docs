@@ -17,6 +17,7 @@ class DocsServiceProvider extends PackageServiceProvider
         $package
             ->name('docs')
             ->hasRoute('web')
+            ->hasTranslations()
             ->hasViews();
     }
 }

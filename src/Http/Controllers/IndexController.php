@@ -29,18 +29,19 @@ class IndexController extends Controller
         $content = Str::of($file->getContents())->markdown();
         $menus = collect(File::directories($path))
             ->keyBy(function ($dir) {
-                return basename($dir);
+                return __(basename($dir));
             })->map(function ($dir) use ($startDir) {
                 return collect(File::files($dir))->map(function (SplFileInfo $f) use ($dir, $startDir) {
                     $name = Str::of($f->getFilenameWithoutExtension())->substr(3);
 
                     return [
                         'link' => $startDir.$name,
-                        'text' => Str::headline($name),
+                        'text' => __(Str::headline($name)),
                     ];
                 });
             });
 
+        SEO::setTitle('FlashVPS: '.__(Str::headline($lastSegment)));
         SEO::opengraph()->setType('article');
         SEO::opengraph()->setUrl($request->url());
         SEO::setDescription(Str::of(strip_tags($content))

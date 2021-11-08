@@ -12,7 +12,7 @@
   @include("docs::navbar")
 
   <div class="bg-base-200">
-    <div class="container mx-auto flex">
+    <div class="container mx-auto flex min-h-full">
       @include("docs::aside")
       <main class="flex-grow block overflow-x-hidden bg-base-100 text-base-content drawer-content">
         <div id="nav" class="inset-x-0 top-0 z-50 w-full border-b border-base-200 bg-base-100 text-base-content sticky">
