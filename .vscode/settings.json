@@ -4,5 +4,7 @@
   "i18n-ally.enabledFrameworks": ["vue"],
   "i18n-ally.keystyle": "flat",
   "i18n-ally.localesPaths": ["resources/lang"],
-  "i18n-ally.sourceLanguage": "en"
+  "i18n-ally.sourceLanguage": "en",
+  "markdown.extension.toc.levels": "2..6",
+  "markdown.extension.preview.autoShowPreviewToSide": true
 }
