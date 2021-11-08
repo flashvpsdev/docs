@@ -7,6 +7,7 @@ use Arr;
 use File;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use SEO;
 use Str;
 use Symfony\Component\Finder\SplFileInfo;
 
@@ -39,6 +40,12 @@ class IndexController extends Controller
                     ];
                 });
             });
+
+        SEO::setDescription(Str::of(strip_tags($content))
+            ->replace("\n", '. ')
+            ->replace('. . ', '. ')
+            ->replace('. . ', '. ')
+            ->limit(200, '...'));
 
         return view('docs::index', compact('content', 'menus'));
     }
