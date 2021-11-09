@@ -2,13 +2,16 @@
 
 ---
 
+<!-- TOC -->
+
 - [FlashVPS là gì?](#flashvps-là-gì)
 - [Tìm hiểu thêm](#tìm-hiểu-thêm)
 - [Địa chỉ IP FlashVPS](#địa-chỉ-ip-flashvps)
 - [Phát hiện có điều gì đó không đúng?](#phát-hiện-có-điều-gì-đó-không-đúng)
 
-<a name='flashvps-là-gì'></a>
+<!-- /TOC -->
 
+<a id="markdown-flashvps-là-gì" name="flashvps-là-gì"></a>
 ## FlashVPS là gì?
 
 FlashVPS là một **dịch vụ quản lý máy chủ đám mây** cho phép bạn duy trì toàn quyền kiểm soát các máy chủ của mình và triển khai, vận hành nhiều trang web với cấu hình nhanh chóng và dễ dàng.
@@ -27,18 +30,21 @@ Facebook Page: https://www.facebook.com/flashvps.dev
 
 <a name='tìm-hiểu-thêm'></a>
 
+<a id="markdown-tìm-hiểu-thêm" name="tìm-hiểu-thêm"></a>
 ## Tìm hiểu thêm
 
 Ngoài tài liệu trên trang này, chúng tôi còn cung cấp thêm video trên kênh Youtube FlashVPS nhằm giải thích sâu hơn về dịch vụ của chúng tôi và cung cấp thêm kiến thức về quản trị máy chủ.
 
 https://www.youtube.com/channel/UCXner1oqfmkgBrkURrXFm-w
 
+<a id="markdown-địa-chỉ-ip-flashvps" name="địa-chỉ-ip-flashvps"></a>
 ## Địa chỉ IP FlashVPS
 
 Nếu bạn đang hạn chế quyền truy cập SSH vào máy chủ của mình bằng danh sách IP cho phép, bạn nên cho phép các địa chỉ IP sau vào danh sách whitelist:
 
 - 207.148.104.53
 
+<a id="markdown-phát-hiện-có-điều-gì-đó-không-đúng" name="phát-hiện-có-điều-gì-đó-không-đúng"></a>
 ## Phát hiện có điều gì đó không đúng?
 
 Nếu bạn thấy điều gì đó trong tài liệu gây nhầm lẫn hoặc không chính xác, vui lòng xem xét gửi PR trên [GitHub](https://github.com/flashvpsdev/docs) hoặc liên hệ trực tiếp qua Facebook hoặc email.
