@@ -2,6 +2,7 @@
 
 namespace FlashVps\Docs\Http\Controllers;
 
+use App;
 use Arr;
 use File;
 use Illuminate\Http\Request;
@@ -15,6 +16,7 @@ class IndexController extends Controller
     public function index(Request $request)
     {
         $lang = $request->segment(2, 'vi');
+        App::setLocale($lang);
         $startDir = '/docs/'.$lang.'/1.0/';
         abort_if(! Str::of($request->path())->start('/')->startsWith($startDir), 404);
 
