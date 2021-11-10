@@ -1,21 +1,22 @@
 <div class="navbar mb-0 shadow-md bg-neutral text-neutral-content">
-  <div class="container mx-auto">
-    <div class="flex-none hidden lg:flex">
-      <button class="btn btn-square btn-ghost">
+  <div class="max-w-screen-xl mx-auto w-full">
+    <div class="flex flex-none lg:hidden">
+      <label for="main-menu" class="btn btn-square btn-ghost drawer-button">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
-      </button>
+      </label>
     </div>
-    <div class="flex-1 hidden px-2 mx-2 lg:flex">
-      <span class="text-lg font-bold"> FlashVPS </span>
+    <div class="hidden md:flex flex-1 mr-2">
+      <a href="/" class="flex text-lg font-bold">
+        @svg('vps-thunder', 'h-8 w-8 inline-block')
+        <span>FlashVPS</span>
+      </a>
     </div>
-    <div class="flex-1 lg:flex-none">
-      <div class="form-control">
+    <div class="flex flex-1 lg:flex-none">
+      <div class="form-control w-32 md:w-auto">
         <input type="text" placeholder="Search" class="input input-ghost" />
       </div>
-    </div>
-    <div class="flex-none">
       <button class="btn btn-square btn-ghost">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>

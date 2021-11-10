@@ -3,5 +3,6 @@
   "Connect Custom Server": "Kết nối máy chủ có sẵn",
   "Getting Started": "Bắt đầu",
   "Servers": "May chủ",
-  "Ssh Keys": "Khóa SSH"
+  "Ssh Keys": "Khóa SSH",
+  "Cloudflare Dns Manager": "Quản lý DNS Cloudflare"
 }
