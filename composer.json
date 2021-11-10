@@ -22,8 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "FlashVps\\Docs\\": "src",
-            "FlashVps\\Docs\\Database\\Factories\\": "database/factories"
+            "FlashVps\\Docs\\": "src"
         }
     },
     "autoload-dev": {
@@ -43,10 +42,7 @@
         "laravel": {
             "providers": [
                 "FlashVps\\Docs\\DocsServiceProvider"
-            ],
-            "aliases": {
-                "Docs": "FlashVps\\Docs\\DocsFacade"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
