@@ -1,1 +1,1 @@
-cp -r ./resources/images/ ../../public/vendor/docs/images/
+cp -r ./resources/images/* ../../public/vendor/docs/images/
