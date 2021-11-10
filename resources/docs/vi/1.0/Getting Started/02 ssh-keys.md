@@ -56,6 +56,6 @@ SSH Key thường được dùng để **THAY THẾ CHO MẬT KHẨU** bằng c�
 <a id="markdown-thêm-ssh-key-vào-máy-chủ" name="thêm-ssh-key-vào-máy-chủ"></a>
 ## Thêm SSH Key vào máy chủ
 
-Trước khi kết nối máy chủ với FlashVPS, bạn nên nhập SSH Key ở trang [SSH Keys](https://flashvps.dev/user/ssh-keyshttps:/) như vậy mỗi khi kết nối một máy chủ mới, các SSH Key đã nhập sẽ được tự động thêm vào máy chủ mới mà không cần phải làm gì cả.
+Trước khi kết nối máy chủ với FlashVPS, bạn nên nhập SSH Key ở trang [SSH Keys](https://flashvps.dev/user/ssh-keys) như vậy mỗi khi kết nối một máy chủ mới, các SSH Key đã nhập sẽ được tự động thêm vào máy chủ mới mà không cần phải làm gì cả.
 
 Để thêm thủ công SSH Key vào máy chủ, bạn hãy vào panel > Chọn máy chủ > SSH Key và thêm SSH Key giống như các bước ở trên.
