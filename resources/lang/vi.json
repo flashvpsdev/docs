@@ -1,8 +1,9 @@
 {
-  "Overview": "Giới thiệu tổng quan",
+  "Cloudflare Dns Manager": "Quản lý DNS Cloudflare",
   "Connect Custom Server": "Kết nối máy chủ có sẵn",
+  "Data Backup": "Sao lưu dữ liệu",
   "Getting Started": "Bắt đầu",
+  "Overview": "Giới thiệu tổng quan",
   "Servers": "May chủ",
-  "Ssh Keys": "Khóa SSH",
-  "Cloudflare Dns Manager": "Quản lý DNS Cloudflare"
+  "Ssh Keys": "Khóa SSH"
 }
