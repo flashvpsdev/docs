@@ -2,3 +2,4 @@
 #FF0000
 
 cp -r ./resources/images/* ../../public/vendor/docs/images/
+npm run prod
