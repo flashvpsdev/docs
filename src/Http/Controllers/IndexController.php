@@ -29,8 +29,9 @@ class IndexController extends Controller
         abort_if(! $file, 404);
         $content = Str::of($file->getContents())->markdown();
         $menus = collect(File::directories($path))
+            ->sort()
             ->keyBy(function ($dir) {
-                return __(basename($dir));
+                return __((string) Str::of(basename($dir))->substr(3));
             })->map(function ($dir) use ($startDir) {
                 return collect(File::files($dir))->map(function (SplFileInfo $f) use ($dir, $startDir) {
                     $name = Str::of($f->getFilenameWithoutExtension())->substr(3);
