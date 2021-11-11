@@ -8,7 +8,7 @@
   <link href="{{ mix('css/app.css', 'vendor/docs') }}" rel="stylesheet">
 </head>
 
-<body x-data :data-theme="$store.theme.theme">
+<body>
   @include("docs::navbar")
 
   <div class="drawer drawer-mobile">
@@ -17,7 +17,7 @@
     <div class="flex flex-col text-base-content drawer-content">
       @include('docs::nav')
 
-      <div class="break-words p-4 lg:p-10 prose-indigo prose sm:prose sm:prose-indigo lg:prose-lg xl:prose-xl">
+      <div class="break-words p-4 lg:p-10 prose lg:prose-xl">
         {!! $content !!}
       </div>
     </div>

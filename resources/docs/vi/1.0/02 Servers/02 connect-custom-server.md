@@ -2,4 +2,4 @@
 
 ---
 
-<div class="relative youtube-player" data-id="3Yjigw866vA"></div>
+<div class="youtube-player" data-id="3Yjigw866vA"></div>
