@@ -10,12 +10,14 @@
         "autoprefixer": "^10.4.0",
         "laravel-mix": "^6.0.37",
         "postcss": "^8.3.11",
+        "sass": "^1.43.4",
+        "sass-loader": "^12.3.0",
         "tailwindcss": "^2.2.19"
     },
     "dependencies": {
         "@alpinejs/persist": "^3.5.0",
         "@tailwindcss/typography": "^0.4.1",
         "alpinejs": "^3.5.0",
-        "daisy": "^0.2.0"
+        "daisyui": "^1.16.2"
     }
 }
