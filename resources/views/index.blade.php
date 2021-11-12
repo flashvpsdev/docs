@@ -27,6 +27,7 @@
       @include('docs::aside')
     </div>
   </div>
+  @include('docs::footer')
   @include('docs::backtotop')
 
   <script src="{{ mix('js/app.js', 'vendor/docs') }}"></script>
