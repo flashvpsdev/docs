@@ -1,4 +1,7 @@
 {
+  "laravel_goto_view.folders": {
+    "docs": "/resources/views"
+  },
   "i18n-ally.displayLanguage": "vi",
   "i18n-ally.enabledFrameworks": ["vue"],
   "i18n-ally.keystyle": "flat",

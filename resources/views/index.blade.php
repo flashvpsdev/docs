@@ -11,7 +11,7 @@
 <body>
   @include("docs::navbar")
 
-  <div class="drawer drawer-mobile">
+  <div class="drawer drawer-mobile max-w-screen-xl mx-auto">
     <input id="main-menu" type="checkbox" class="drawer-toggle">
 
     <div class="flex flex-col text-base-content drawer-content">
@@ -27,6 +27,7 @@
       @include('docs::aside')
     </div>
   </div>
+
   @include('docs::footer')
   @include('docs::backtotop')
 
