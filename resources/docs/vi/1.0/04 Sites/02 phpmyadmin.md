@@ -2,21 +2,22 @@
 
 <!-- TOC -->
 
-- [phpMyAdmin là gì?](#php-myadmin-là-gì)
-- [Các tính năng nổi bật](#các-tính-năng-nổi-bật-php-myadmin)
-- [Hướng dẫn cài đặt phpMyAdmin](#hướng-dẫn-cài-đặt-php-myadmin)
-- [Một số vấn đề cần lưu ý](#một-số-vấn-đề-cần-lưu-ý-php-myadmin)
-- [Một số thao tác cơ bản trên phpMyAdmin](#một-số-thao-tác-cơ-bản-trên-php-myadmin)
+- [phpMyAdmin là gì?](#phpmyadmin-là-gì)
+- [Các tính năng nổi bật của phpMyAdmin](#các-tính-năng-nổi-bật-của-phpmyadmin)
+- [Hướng dẫn cài đặt phpMyAdmin](#hướng-dẫn-cài-đặt-phpmyadmin)
+- [Một số vấn đề cần lưu ý](#một-số-vấn-đề-cần-lưu-ý)
+  - [Khi import file với dung lượng lớn](#khi-import-file-với-dung-lượng-lớn)
+- [Một số thao tác cơ bản trên phpMyAdmin](#một-số-thao-tác-cơ-bản-trên-phpmyadmin)
+  - [Tạo Cơ sở dữ liệu (CSDL)](#tạo-cơ-sở-dữ-liệu-csdl)
+  - [Tạo bảng cho CSDL](#tạo-bảng-cho-csdl)
+  - [Thêm bản ghi cho bảng](#thêm-bản-ghi-cho-bảng)
+  - [Xuất file (Export File)](#xuất-file-export-file)
+  - [Nhập file (Import File)](#nhập-file-import-file)
+  - [Phân quyền](#phân-quyền)
 
-  - [Tạo Cơ sở dữ liệu (CSDL)](#tạo-csdl-php-myadmin)
-  - [Tạo bảng cho CSDL](#tạo-bảng-php-myadmin)
-  - [Thêm bản ghi cho bảng](#thêm-bản-ghi-cho-bảng-php-myadmin)
-  - [Xuất file (Export File)](#xuất-file-php-myadmin)
-  - [Nhập file (Import File)](#nhập-file-php-myadmin)
-  - [Phân quyền)](#phân-quyền-php-myadmin)
 <!-- /TOC -->
 
-<a id="markdown-php-myadmin-là-gì" name="php-myadmin-là-gì"></a>
+<a id="markdown-phpmyadmin-là-gì" name="phpmyadmin-là-gì"></a>
 
 ## phpMyAdmin là gì?
 
@@ -28,7 +29,7 @@ Nếu bạn chưa từng làm như vậy, bạn nên tạo một cơ sở dữ l
 
 Một khi FlashVPS đã cài đặt phpMyAdmin, sau đó bạn có thể đăng nhập vào cài đặt của mình bằng bất kỳ tổ hợp tên người dùng và mật khẩu cơ sở dữ liệu nào của bạn.
 
-<a id="markdown-các-tính-năng-nổi-bật-php-myadmin" name="các-tính-năng-nổi-bật-php-myadmin"></a>
+<a id="markdown-các-tính-năng-nổi-bật-của-phpmyadmin" name="các-tính-năng-nổi-bật-của-phpmyadmin"></a>
 
 ## Các tính năng nổi bật của phpMyAdmin
 
@@ -49,20 +50,20 @@ Một khi FlashVPS đã cài đặt phpMyAdmin, sau đó bạn có thể đăng 
 - Chuyển đổi dữ liệu được lưu trữ sang bất kỳ định dạng nào bằng cách sử dụng một tập hợp các predefined functions, như hiển thị dữ liệu BLOB dưới dạng hình ảnh hoặc download-link
 - ...
 
-<a id="markdown-hướng-dẫn-cài-đặt-php-myadmin" name="hướng-dẫn-cài-đặt-php-myadmin"></a>
+<a id="markdown-hướng-dẫn-cài-đặt-phpmyadmin" name="hướng-dẫn-cài-đặt-phpmyadmin"></a>
 
 ## Hướng dẫn cài đặt phpMyAdmin
 
 **Lưu ý:** Hiện tại **php8.1** còn mới cho nên việc cài đặt phpMyAdmin trên phiên bản này còn có một số lỗi.
 Lựa chọn phiên bản **php8.0 hoặc thấp hơn** thay thế.
 
-1. **Cài đặt máy chủ**: [Kết nối Máy Chủ sẵn có](https://flashvps.dev/docs/vi/1.0/connect-custom-server). Bạn có thể cài MySQL hoặc MariaDB
+1. **Cài đặt máy chủ**: [Kết nối Máy Chủ sẵn có](/docs/vi/1.0/connect-custom-server). Bạn có thể cài MySQL hoặc MariaDB
    ![](/vendor/docs/images/phpmyadmin-create-new-server.png)
 
 2. **Tạo trang web**: Tại giao diện thông tin máy chủ, bạn chọn `Tạo trang web mới`
-![](/vendor/docs/images/phpmyadmin-list-site.png)
-Điền thông tin trang web và chọn `Tạo trang web`
-![](/vendor/docs/images/phpmyadmin-create-new-site.png)
+   ![](/vendor/docs/images/phpmyadmin-list-site.png)
+   Điền thông tin trang web và chọn `Tạo trang web`
+   ![](/vendor/docs/images/phpmyadmin-create-new-site.png)
 
 3. **Cài đặt phpMyAdmin**: Bạn đi tới trang web vừa được tạo.
    Sau đó chọn vào tab `Mã nguồn` > `phpMyAdmin` và chọn `Cài đặt phpMyAdmin`
@@ -75,31 +76,32 @@ Lựa chọn phiên bản **php8.0 hoặc thấp hơn** thay thế.
    Sau khi đăng nhập thành công có giao diện như sau:
    ![](/vendor/docs/images/phpmyadmin-dashboard.png)
 
-<a id="markdown-một-số-vấn-đề-cần-lưu-ý-php-myadmin" name="một-số-vấn-đề-cần-lưu-ý-php-myadmin"></a>
+<a id="markdown-một-số-vấn-đề-cần-lưu-ý" name="một-số-vấn-đề-cần-lưu-ý"></a>
 
 ## Một số vấn đề cần lưu ý
+
+<a id="markdown-khi-import-file-với-dung-lượng-lớn" name="khi-import-file-với-dung-lượng-lớn"></a>
 
 ### Khi import file với dung lượng lớn
 
 - Khi import file với dung lượng lớn sẽ mất nhiều thời gian xử lý
-- Bạn quay lại [FlashVPS](http://flashvps.dev/servers) và thiết lập thêm 1 vài thông số tại tab `PHP` để việc import file thực hiện thành công:
+- Bạn quay lại [FlashVPS](/servers) và thiết lập thêm 1 vài thông số tại tab `PHP` để việc import file thực hiện thành công:
   - Thiết lập `Kích thước file tải lên tối đa` (MB)
   - Thiết lập `thời gian thực thi`
     ![](/vendor/docs/images/phpmyadmin-config-php.png)
 
-
-<a id="markdown-một-số-thao-tác-cơ-bản-trên-php-myadmin" name="một-số-thao-tác-cơ-bản-trên-php-myadmin"></a>
+<a id="markdown-một-số-thao-tác-cơ-bản-trên-phpmyadmin" name="một-số-thao-tác-cơ-bản-trên-phpmyadmin"></a>
 
 ## Một số thao tác cơ bản trên phpMyAdmin
 
-<a id="markdown-tạo-csdl-php-myadmin" name="tạo-csdl-php-myadmin"></a>
+<a id="markdown-tạo-cơ-sở-dữ-liệu-csdl" name="tạo-cơ-sở-dữ-liệu-csdl"></a>
 
 ### Tạo Cơ sở dữ liệu (CSDL)
 
 Tại giao diện chính, bạn chọn `Database` > `nhập tên csdl` và `collection` > `Create`
 ![](/vendor/docs/images/phpmyadmin-create-database.png)
 
-<a id="markdown-tạo-bảng-php-myadmin" name="tạo-bảng-php-myadmin"></a>
+<a id="markdown-tạo-bảng-cho-csdl" name="tạo-bảng-cho-csdl"></a>
 
 ### Tạo bảng cho CSDL
 
@@ -110,7 +112,7 @@ Bạn điền thông tin cho bảng như tên cột, kiểu dữ liệu, độ d
 Sau khi Chọn `Save` chúng ta được cấu trúc bảng như sau.
 ![](/vendor/docs/images/phpmyadmin-create-table2.png)
 
-<a id="markdown-thêm-bản-ghi-cho-bảng-php-myadmin" name="thêm-bản-ghi-cho-bảng-php-myadmin"></a>
+<a id="markdown-thêm-bản-ghi-cho-bảng" name="thêm-bản-ghi-cho-bảng"></a>
 
 ### Thêm bản ghi cho bảng
 
@@ -121,7 +123,7 @@ Thông báo thành công
 Bạn chọn vào tab `Browse` để xem danh sách các bản ghi đang có
 ![](/vendor/docs/images/phpmyadmin-view-table.png)
 
-<a id="markdown-xuất-file-php-myadmin" name="xuất-file-php-myadmin"></a>
+<a id="markdown-xuất-file-export-file" name="xuất-file-export-file"></a>
 
 ### Xuất file (Export File)
 
@@ -133,7 +135,7 @@ Có 2 loại xuất file:
 - `Xuất bảng`: Bạn chọn 1 bảng và chọn tab `Export` > `Chọn kiểu cần format: SQL, CSV, Excel,...` > `Rows` > `Go`
   ![](/vendor/docs/images/phpmyadmin-export-table.png)
 
-<a id="markdown-nhập-file-php-myadmin" name="nhập-file-php-myadmin"></a>
+<a id="markdown-nhập-file-import-file" name="nhập-file-import-file"></a>
 
 ### Nhập file (Import File)
 
@@ -143,11 +145,11 @@ Có 2 loại Nhập file:
 - `Nhập bảng`: Bạn chọn 1 CSDL và chọn vào tab `Import` > `Chọn file cần import.` > `Go`
 
 **_Lưu ý_**: Ở đây bạn cần lưu ý chỗ **(Max: 2.048KB)**. Đây là kích thước file tối đa có thể tải lên theo mặc định.
-Nếu file của bạn có kích thước lớn hơn, bạn cần phải cập nhật kích thước theo hướng dẫn [tại đây](#một-số-vấn-đề-cần-lưu-ý-php-myadmin).
+Nếu file của bạn có kích thước lớn hơn, bạn cần phải cập nhật kích thước theo hướng dẫn [tại đây](#một-số-vấn-đề-cần-lưu-ý).
 Sau đó quay lại phpMyAdmin và thực hiện Nhập file như bình thường
 ![](/vendor/docs/images/phpmyadmin-import-database.png)
 
-<a id="markdown-phân-quyền-php-myadmin" name="phân-quyền-php-myadmin"></a>
+<a id="markdown-phân-quyền" name="phân-quyền"></a>
 
 ### Phân quyền
 
