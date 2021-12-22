@@ -5,6 +5,7 @@
 - [phpMyAdmin là gì?](#php-myadmin-là-gì)
 - [Các tính năng nổi bật](#các-tính-năng-nổi-bật-php-myadmin)
 - [Hướng dẫn cài đặt phpMyAdmin](#hướng-dẫn-cài-đặt-php-myadmin)
+- [Một số vấn đề cần lưu ý](#một-số-vấn-đề-cần-lưu-ý-php-myadmin)
 - [Một số thao tác cơ bản trên phpMyAdmin](#một-số-thao-tác-cơ-bản-trên-php-myadmin)
 
   - [Tạo Cơ sở dữ liệu (CSDL)](#tạo-csdl-php-myadmin)
@@ -13,9 +14,6 @@
   - [Xuất file (Export File)](#xuất-file-php-myadmin)
   - [Nhập file (Import File)](#nhập-file-php-myadmin)
   - [Phân quyền)](#phân-quyền-php-myadmin)
-
-- [Một số vấn đề cần lưu ý](#một-số-vấn-đề-cần-lưu-ý-php-myadmin)
-
 <!-- /TOC -->
 
 <a id="markdown-php-myadmin-là-gì" name="php-myadmin-là-gì"></a>
@@ -58,11 +56,16 @@ Một khi FlashVPS đã cài đặt phpMyAdmin, sau đó bạn có thể đăng 
 **Lưu ý:** Hiện tại **php8.1** còn mới cho nên việc cài đặt phpMyAdmin trên phiên bản này còn có một số lỗi.
 Lựa chọn phiên bản **php8.0 hoặc thấp hơn** thay thế.
 
-1. Cài đặt máy chủ nếu chưa có [Create new server](https://flashvps.dev/servers/create). Bạn có thể cài MySQL hoặc MariaDB
+1. **Cài đặt máy chủ**: [Kết nối Máy Chủ sẵn có](https://flashvps.dev/docs/vi/1.0/connect-custom-server). Bạn có thể cài MySQL hoặc MariaDB
    ![](/vendor/docs/images/phpmyadmin-create-new-server.png)
-2. Sau khi máy chủ được cài đặt xong. Bạn đi tới máy chủ vừa được tạo, chọn vào trang web mặc định mà FlashVPS tạo cho bạn hoặc bạn có thể tạo 1 trang web mới [Create new site](https://flashvps.dev/sites/create) tùy bạn.
+
+2. **Tạo trang web**: Tại giao diện thông tin máy chủ, bạn chọn `Tạo trang web mới`
+![](/vendor/docs/images/phpmyadmin-list-site.png)
+Điền thông tin trang web và chọn `Tạo trang web`
+![](/vendor/docs/images/phpmyadmin-create-new-site.png)
+
+3. **Cài đặt phpMyAdmin**: Bạn đi tới trang web vừa được tạo.
    Sau đó chọn vào tab `Mã nguồn` > `phpMyAdmin` và chọn `Cài đặt phpMyAdmin`
-   ![](/vendor/docs/images/phpmyadmin-list-site.png)
    ![](/vendor/docs/images/phpmyadmin-site-install-phpmyadmin.png)
 
    FlashVPS sẽ tiến hành cài đặt giúp bạn, Quá trình cài đặt sẽ mất 1-2 phút. Sau đó bạn chỉ việc truy cập vào trang web và nếu bạn thấy giao diện như hình dưới là đã thành công.
@@ -71,6 +74,19 @@ Lựa chọn phiên bản **php8.0 hoặc thấp hơn** thay thế.
 
    Sau khi đăng nhập thành công có giao diện như sau:
    ![](/vendor/docs/images/phpmyadmin-dashboard.png)
+
+<a id="markdown-một-số-vấn-đề-cần-lưu-ý-php-myadmin" name="một-số-vấn-đề-cần-lưu-ý-php-myadmin"></a>
+
+## Một số vấn đề cần lưu ý
+
+### Khi import file với dung lượng lớn
+
+- Khi import file với dung lượng lớn sẽ mất nhiều thời gian xử lý
+- Bạn quay lại [FlashVPS](http://flashvps.dev/servers) và thiết lập thêm 1 vài thông số tại tab `PHP` để việc import file thực hiện thành công:
+  - Thiết lập `Kích thước file tải lên tối đa` (MB)
+  - Thiết lập `thời gian thực thi`
+    ![](/vendor/docs/images/phpmyadmin-config-php.png)
+
 
 <a id="markdown-một-số-thao-tác-cơ-bản-trên-php-myadmin" name="một-số-thao-tác-cơ-bản-trên-php-myadmin"></a>
 
@@ -146,15 +162,3 @@ Phân quyền cũng có 2 loại là:
   ![](/vendor/docs/images/phpmyadmin-add-user2.png)
   Giao diện thêm thành công và sửa quyền
   ![](/vendor/docs/images/phpmyadmin-add-user3.png)
-
-<a id="markdown-một-số-vấn-đề-cần-lưu-ý-php-myadmin" name="một-số-vấn-đề-cần-lưu-ý-php-myadmin"></a>
-
-## Một số vấn đề cần lưu ý
-
-### Khi import file với dung lượng lớn
-
-- Khi import file với dung lượng lớn sẽ mất nhiều thời gian xử lý
-- Bạn quay lại [FlashVPS](http://flashvps.dev/servers) và thiết lập thêm 1 vài thông số tại tab `PHP` để việc import file thực hiện thành công:
-  - Thiết lập `Kích thước file tải lên tối đa` (MB)
-  - Thiết lập `thời gian thực thi`
-    ![](/vendor/docs/images/phpmyadmin-config-php.png)
