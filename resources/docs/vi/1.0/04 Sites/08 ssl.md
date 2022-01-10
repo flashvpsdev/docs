@@ -25,7 +25,7 @@ FlashVPS hỗ trợ cài đặt chứng chỉ SSL tùy chỉnh và sử dụng L
 
 FlashVPS sẽ tự động gia hạn chứng chỉ LetsEncrypt của bạn trong vòng 21 ngày trở xuống trước khi hết hạn. Hoặc bạn cũng có thể [gia hạn thủ công tại bảng quản lý chứng chỉ của trang web](#quản-lý-chứng-chỉ-ssl). Việc gia hạn sẽ diễn ra vào một ngày và giờ ngẫu nhiên để tránh làm tràn ngập các máy chủ LetsEncrypt.
 
-Nếu có sự cố xảy ra khi gia hạn chứng chỉ, FlashVPS sẽ thông báo cho chủ sở hữu (owner) máy chủ qua email.
+<!-- Nếu có sự cố xảy ra khi gia hạn chứng chỉ, FlashVPS sẽ thông báo cho chủ sở hữu (owner) máy chủ qua email. -->
 
 Bạn có thể tạo Singing Request tại tab `SSL` trên bảng quản lý trang web của FlashVPS:
 ![](/vendor/docs/images/site-ssl-01.png)
