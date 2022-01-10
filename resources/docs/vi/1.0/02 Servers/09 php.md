@@ -9,7 +9,7 @@
 - [Chuyển đổi PHP Mặc định](#chuyển-đổi-php-mặc-định)
 - [Một số cài đặt cấu hình PHP phổ biến](#một-số-cài-đặt-cấu-hình-php-phổ-biến)
   - [Kích thước tải lên tệp tối đa](#kích-thước-tải-lên-tệp-tối-đa)
-  - [Thời gian thực thi tối đa](#thời-gian-thực-thi-tệp-tối-đa)
+  - [Thời gian thực thi tối đa](#thời-gian-thưc-thi-tối-đa)
   - [OPcache](#opcache)
 <!-- /TOC -->
 
@@ -74,5 +74,5 @@ Bạn có thể định cấu hình thời gian thực thi tối đa thông qua 
 <a id="markdown-opcache" name="opcache"></a>
 
 ### OPcache
-Việc tối ưu hóa OPcache PHP cho sản xuất(production) sẽ cấu hình OPcache để lưu trữ mã PHP đã biên dịch của bạn trong bộ nhớ để cải thiện đáng kể hiệu suất. Nếu bạn chọn tối ưu hóa OPcache cho sản xuất(production), bạn nên xác minh rằng tập lệnh triển khai của bạn [**tải lại dịch vụ PHP-FPM**](/docs/1.0/servers/cookbook#restarting-php-fpm) vào cuối mỗi lần triển khai.
+Việc tối ưu hóa OPcache PHP cho sản xuất(production) sẽ cấu hình OPcache để lưu trữ mã PHP đã biên dịch của bạn trong bộ nhớ để cải thiện đáng kể hiệu suất. Nếu bạn chọn tối ưu hóa OPcache cho sản xuất(production), bạn nên xác minh rằng tập lệnh triển khai của bạn [**tải lại dịch vụ PHP-FPM**](/docs/vi/1.0/cookbook#restarting-php-fpm) vào cuối mỗi lần triển khai.
 ![](/vendor/docs/images/php-opcache.png)
