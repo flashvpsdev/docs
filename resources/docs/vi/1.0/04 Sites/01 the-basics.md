@@ -45,14 +45,14 @@ Cài đặt mã nguồn tại tab `Mã nguồn` trên bảng điều khiển c�
 
 ### Git Repository
 > **! Nhà cung cấp kiểm soát nguồn**  
-> Trước khi bạn có thể cài đặt kho lưu trữ Git, trước tiên bạn phải đảm bảo rằng bạn đã [kết nối nhà cung cấp kiểm soát nguồn](/docs/1.0/accounts/source-control) với tài khoản FlashVPS của mình.
+> Trước khi bạn có thể cài đặt kho lưu trữ Git, trước tiên bạn phải đảm bảo rằng bạn đã [kết nối nhà cung cấp kiểm soát nguồn](/docs/vi/1.0/source-control#kết-nối-nhà-cung-cấp) với tài khoản FlashVPS của mình.
 
 Khi bạn đã kết nối các tài khoản nhà cung cấp kiểm soát nguồn của mình, bạn có thể chọn nhà cung cấp từ một trong các tùy chọn có sẵn. Các bước cài đặt mã nguồn cho trang web: 
 1. Chọn nhà cung cấp `Git`
 ![](/vendor/docs/images/source-code-git-repository.png)
 
 2. Chọn Tùy chọn cài đặt mã nguồn **(Custom Git | Github | Gitlab)**
-Nếu bạn chọn `Custom Git` bạn sẽ cần thêm khóa SSH FlashVPS vào nhà cung cấp theo cách thủ công.
+Nếu bạn chọn `Custom Git` bạn sẽ cần [thêm khóa SSH FlashVPS vào nhà cung cấp](/docs/vi/1.0/source-control#sử-dụng-custom-git-provider) theo cách thủ công.
 ![](/vendor/docs/images/source-code-custom-git.png)
 3. Nhập tên kho lưu trữ. Đối với tên kho lưu trữ bạn nên cung cấp URL SSH đầy đủ, ví dụ: `git@flashvps.com:flashvps/flashvps.git`.
 4. Nhập Tên nhánh
