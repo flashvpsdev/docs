@@ -71,6 +71,8 @@ Bạn có thể thiết lập cấu hình kích thước tải lên tệp tối 
 Bạn có thể định cấu hình thời gian thực thi tối đa thông qua tab **PHP** của bảng điều khiển quản lý máy chủ. Giá trị này sẽ được cung cấp theo đơn vị `giây`.
 ![](/vendor/docs/images/php-max-execution-time.png)
 
+<a id="markdown-opcache" name="opcache"></a>
+
 ### OPcache
 Việc tối ưu hóa OPcache PHP cho sản xuất(production) sẽ cấu hình OPcache để lưu trữ mã PHP đã biên dịch của bạn trong bộ nhớ để cải thiện đáng kể hiệu suất. Nếu bạn chọn tối ưu hóa OPcache cho sản xuất(production), bạn nên xác minh rằng tập lệnh triển khai của bạn [**tải lại dịch vụ PHP-FPM**](/docs/1.0/servers/cookbook#restarting-php-fpm) vào cuối mỗi lần triển khai.
 ![](/vendor/docs/images/php-opcache.png)
