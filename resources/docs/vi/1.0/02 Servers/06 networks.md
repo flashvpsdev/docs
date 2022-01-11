@@ -30,7 +30,7 @@ Bạn có thể thiết lập cấu hình và quản lý tường lửa của m�
 - **Cổng**: Bạn có thể cung cấp một loạt các cổng để mở `(8000:8010)`, cổng này sẽ mở mọi cổng từ `8000` đến `8010`.
 - **Loại quy tắc cho phép(Allow)/ từ chối(Deny)**: Bạn có thể chọn cho phép hoặc từ chối traffic cho một rule nhất định. Bằng cách tạo `từ chối` rule, bạn sẽ ngăn traffic truy cập đến dịch vụ.
 > **! Deny Rule Run First.**  
-> Để làm cho các `deny` rules hoạt động chính xác, chúng được thêm vào ở mức độ ưu tiên cao hơn các `allow` rule. Mỗi `deny` rule mới sẽ được thêm vào bên trên mọi quy `deny` rule hiện có.
+> Để làm cho các `deny` rules hoạt động chính xác, chúng được thêm vào ở mức độ ưu tiên cao hơn các `allow` rule. Mỗi `deny` rule mới sẽ được thêm vào bên trên mọi `deny` rule hiện có.
 
 ![](/vendor/docs/images/network-tab.png)
 2. Chọn `Thêm mới`
