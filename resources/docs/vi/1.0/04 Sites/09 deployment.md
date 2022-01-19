@@ -26,7 +26,7 @@ Triển khai là quá trình trong đó mã của bạn được tải xuống t
 Một số ứng dụng, chẳng hạn như những ứng dụng được tạo bằng Framework Laravel, có thể yêu cầu tệp `.env` để cấu hình cài đặt như cơ sở dữ liệu và bộ nhớ đệm. Bạn có thể tạo và chỉnh sửa tệp Môi trường của mình trong bảng điều khiển quản lý của trang FlashVPS.
 
 Tại bảng điều khiển quản lý trang web > Chọn `.env`
-![](/vendor/docs/images/site-profile-new.png)
+![](/vendor/docs/images/site-dashboard.png)
 ![](/vendor/docs/images/site-profile-new-env.png)
 
 > **! Automatic Environment Files**  
@@ -39,7 +39,7 @@ Tính năng 'Tự động triển khai' của FlashVPS cho phép bạn dễ dàn
 Bạn có thể kích hoạt tính năng tự động triển khai của FlashVPS theo sau:
 
 1. Tại bảng điều khiển quản lý trang web > Chọn `Tự động triển khai`
-![](/vendor/docs/images/site-profile-new.png)
+![](/vendor/docs/images/site-dashboard.png)
 ![](/vendor/docs/images/site-profile-new-auto-deploy.png)
 2. Chọn `Bật tự động triển khai`
 
@@ -101,7 +101,7 @@ Cho đến nay, chúng ta đã thảo luận về việc triển khai các trang
 Để thực hiện triển khai FlashVPS từ nền tảng CI, bạn có thể sử dụng `Triển khai từ CI`.
 
 1. Tại bảng điều khiển quản lý trang web > Chọn `URL Tự động kích hoạt triển khai`
-![](/vendor/docs/images/site-profile-new.png)
+![](/vendor/docs/images/site-dashboard.png)
 ![](/vendor/docs/images/site-profile-new-url-auto-deploy.png)
 2. Chọn `Làm mới mã thông báo triển khai`
 
@@ -121,15 +121,15 @@ Bạn có thể thay đổi nhánh được triển khai cho trang web của mì
 
 Các bước để cập nhật `nhánh triển khai`: 
 1. Tại bảng điều khiển quản lý trang web > Chọn `Cập nhật nhánh triển khai`
-![](/vendor/docs/images/site-profile-new.png)
+![](/vendor/docs/images/site-dashboard.png)
 2. Nhập tên nhánh cần thay đổi
 ![](/vendor/docs/images/site-profile-new-update-branch.png)
 3. Chọn `Cập nhật`
 
 Các bước để kích hoạt `triển khai ngay` một cách thủ công:
 
-1. Tại bảng điều khiển quản lý trang web > Chọn `Deploy`
-![](/vendor/docs/images/site-deploy-tab.png)
+1. Tại bảng điều khiển quản lý trang web > Chọn `Triển khai và Lịch sử`
+![](/vendor/docs/images/deploy-tab-site-dashboard.png)
 2. Chọn `Triển khai ngay`
 ![](/vendor/docs/images/site-deploy-now.png)
 
@@ -142,7 +142,7 @@ Bạn không nên sử dụng chức năng này để cài đặt một dự án
 
 Các bước để cập nhật `Git Remote`: 
 1. Tại bảng điều khiển quản lý trang web > Chọn `Cập nhật Git Remote`
-![](/vendor/docs/images/site-profile-new.png)
+![](/vendor/docs/images/site-dashboard.png)
 2. Thay đổi nhà cung cấp hoặc đường dẫn đầy đủ của kho lưu trữ.
 ![](/vendor/docs/images/site-profile-new-update-git-remote.png)
 3. Chọn `Cập nhật`
@@ -150,6 +150,6 @@ Các bước để cập nhật `Git Remote`:
 Các bước để `Xóa code`:
 
 1. Tại bảng điều khiển quản lý trang web > Chọn `Xóa code`
-![](/vendor/docs/images/site-profile-new.png)
+![](/vendor/docs/images/site-dashboard.png)
 2. Chọn `Xóa code`
 ![](/vendor/docs/images/site-profile-new-remove-code.png)
