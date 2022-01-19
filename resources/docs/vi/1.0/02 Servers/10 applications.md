@@ -17,6 +17,7 @@ Hiện tại FlashVPS đang hỗ trợ cài đặt các ứng dụng sau:
 - MariaDB
 - Redis
 - NodeJS
+- PM2
 - Memcached
 - Melisearch
 - Rclone
@@ -25,6 +26,12 @@ Hiện tại FlashVPS đang hỗ trợ cài đặt các ứng dụng sau:
 
 ## Quản lý ứng dụng
 Khi [cài đặt máy chủ mới](/docs/vi/1.0/connect-custom-server) bạn có thể chọn các ứng dụng sẽ được cài đặt cùng với máy chủ.
-Hoặc bạn có thể cài đặt sau đó tại tab **Ứng dụng** trên bảng điều khiển quản lý của máy chủ.
+Hoặc bạn có thể cài đặt sau đó tại tab **Ứng dụng** trên thanh bên quản lý máy chủ.
 ![](/vendor/docs/images/application-tab.png)
 ![](/vendor/docs/images/application-installed.png)
+
+**Hoặc** tại bảng điều khiển của máy chủ
+![](/vendor/docs/images/application-server-dashboard.png)
+![](/vendor/docs/images/application-dialog-server-dashboard.png)
+
+
