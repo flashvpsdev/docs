@@ -22,7 +22,7 @@ Khi tạo một trang web mới trên máy chủ FlashVPS của bạn, nhiều t
 - **Máy chủ**: Máy chủ mà trang web sẽ được tạo trong đó.
 - **Domain Name**: Tên miền cho trang web.
 - **Aliases**: Bí danh cho trang web (tùy chọn)
-- **Project Type**: Tùy chọn này cho biết liệu dự án được cài đặt cho trang web của bạn sẽ là một dự án PHP / Laravel hay một trang HTML tĩnh. Cài đặt này được sử dụng để xác định cấu trúc của tệp cấu hình Nginx được tạo cho trang web của bạn.
+- **Project Type**: Tùy chọn này cho biết liệu dự án được cài đặt cho trang web của bạn sẽ là một dự án PHP / Laravel hay một trang HTML tĩnh. Cài đặt này được sử dụng để xác định cấu trúc của tệp cấu hình Nginx được tạo cho trang web của bạfn.
 - **Web Directory**: Thư mục có thể truy cập công khai qua Internet. Đối với các ứng dụng Laravel, đây thường là thư mục `/public`.
 - **PHP Version**: Nếu bạn đã cài đặt nhiều phiên bản PHP trên máy chủ của mình, bạn có thể chọn phiên bản nào sẽ được sử dụng để phục vụ trang web.
 - **Bật wildcard tên miền con**: Wildcard tên miền con cho phép bạn có thể đặt điểm đến cho tất cả tên miền con không tồn tại về website hiện tại.
@@ -37,9 +37,10 @@ Khi tạo một trang web mới trên máy chủ FlashVPS của bạn, nhiều t
 <a id="markdown-apps-project" name="apps-project"></a>
 
 ## Apps / Project
-Khi trang web đã được tạo trong FlashVPS, bạn có thể cài đặt một ứng dụng hoặc dự án. Các dự án chứa mã nguồn thực của ứng dụng của bạn. FlashVPS có thể cài đặt ba loại ứng dụng: ứng dụng tồn tại trong kho lưu trữ Git, WordPress hoặc phpMyAdmin.
-Cài đặt mã nguồn tại tab `Mã nguồn` trên bảng điều khiển của trang web
-![](/vendor/docs/images/source-code-tab.png)
+Khi trang web đã được tạo trong FlashVPS, bạn có thể cài đặt một ứng dụng hoặc dự án. Các dự án chứa mã nguồn thực của ứng dụng của bạn. FlashVPS có thể cài đặt ba loại ứng dụng: Git Repository, WordPress hoặc phpMyAdmin.
+Cài đặt mã nguồn tại bảng điều khiển quản lý của trang web
+![](/vendor/docs/images/site-dashboard.png)
+![](/vendor/docs/images/code-install-site-dashboard.png)
 
 <a id="markdown-git-repository" name="git-repository"></a>
 
@@ -70,7 +71,7 @@ Các bước cài đặt [Wordpress](https://wordpress.org/):
 Sau khi quá trình cài đặt hoàn tất. Bạn có thể đi đến tên miền trang web của bạn và tiếp tục cài đặt WordPress từ trình duyệt.
 
 > **! Bảo mật WordPress**  
-> Bạn nên tiếp tục cài đặt WordPress ngay sau khi FlashVPS đã cài đặt nó cho bạn, để nó được đảm bảo an toàn với tên người dùng và mật khẩu của bạn. Bạn cũng có thể chọn tạo [Quy tắc bảo mật](/docs/1.0/sites/nginx-configuration#new-security-rule) mới trước khi cài đặt WordPress để cài đặt của bạn được bảo vệ bằng mật khẩu.
+> Bạn nên tiếp tục cài đặt WordPress ngay sau khi FlashVPS đã cài đặt nó cho bạn, để nó được đảm bảo an toàn với tên người dùng và mật khẩu của bạn. Bạn cũng có thể chọn tạo [Quy tắc bảo mật](/docs/vi/1.0/sites/nginx-configuration#quy-tắc-bảo-mật) mới trước khi cài đặt WordPress để cài đặt của bạn được bảo vệ bằng mật khẩu.
 
 <a id="markdown-phpMyAdmin" name="phpMyAdmin"></a>
 
@@ -86,7 +87,7 @@ Khi FlashVPS đã cài đặt phpMyAdmin, sau đó bạn có thể đăng nhập
 
 ## Trang web mặc định
 ![](/vendor/docs/images/default-site.png)
-Khi ban đầu bạn cung cấp một máy chủ FlashVPS, FlashVPS sẽ tạo một trang web duy nhất trên máy chủ đặt tên là địa chỉ IP của máy chủ. Điều này rất tiện lợi vì đôi khi bạn có thể không có tên miền cụ thể nào bạn muốn liên kết với một máy chủ nhất định ngay sau khi máy chủ được tạo thành công.
+<!-- Khi ban đầu bạn cung cấp một máy chủ FlashVPS, FlashVPS sẽ tạo một trang web duy nhất trên máy chủ đặt tên là địa chỉ IP của máy chủ. Điều này rất tiện lợi vì đôi khi bạn có thể không có tên miền cụ thể nào bạn muốn liên kết với một máy chủ nhất định ngay sau khi máy chủ được tạo thành công. -->
 
 Khi bạn đã sẵn sàng chuyển đổi ứng dụng của mình sang một tên miền chính thức, bạn có thể dễ dàng [Tạo trang web](#tạo-trang-web) với tên miền của bạn.
 
@@ -197,15 +198,16 @@ server{
 
 ## PHP Version
 Nếu máy chủ của bạn đã cài đặt nhiều phiên bản PHP, bạn có thể chuyển đổi phiên bản mà trang web dụng bất kỳ lúc nào bằng cách sử dụng tab `Site {domain_name}` của trang web trong bảng điều khiển FlashVPS.
-![](/vendor/docs/images/site-profile.png)
+![](/vendor/docs/images/site-dashboard.png)
 
 <a id="markdown-chuyển-đổi-phiên-bản-php-cho-trang-web" name="chuyển-đổi-phiên-bản-php-cho-trang-web"></a>
 
 ### Chuyển đổi phiên bản PHP cho trang web
-![](/vendor/docs/images/php-switch-version.png)
+![](/vendor/docs/images/php-switch-version-site-dashboard.png)
 Khi chuyển đổi phiên bản mà trang web đang sử dụng, bạn nên đảm bảo rằng máy chủ của mình có cài đặt đầy đủ extension/mô-đun PHP bổ sung cho phiên bản đó. Việc không cài đặt các mô-đun bổ sung có thể làm cho trang web của bạn không phản hồi.
 
 Bạn cũng sẽ cần cập nhật tập lệnh triển khai của trang web của mình để tải lại phiên bản PHP-FPM chính xác và gọi phiên bản PHP chính xác khi chạy bất kỳ lệnh PHP nào.
-Cập nhật tập lệnh triển khai tại tab `Deploy` trên bảng điều khiển của Trang web.
-![](/vendor/docs/images/deploy-script.png)
+Cập nhật tập lệnh triển khai tại bảng điều khiển quản lý của Trang web.
+
+![](/vendor/docs/images/update-deployment-script-site-dashboard.png)
 
