@@ -33,7 +33,7 @@ class IndexController extends Controller
             ->keyBy(function ($dir) {
                 return __((string) Str::of(basename($dir))->substr(3));
             })->map(function ($dir) use ($startDir) {
-                return collect(File::files($dir))->map(function (SplFileInfo $f) use ($dir, $startDir) {
+                return collect(File::files($dir))->map(function (SplFileInfo $f) use ($startDir) {
                     $name = Str::of($f->getFilenameWithoutExtension())->substr(3);
 
                     return [
@@ -43,14 +43,14 @@ class IndexController extends Controller
                 });
             });
 
-        SEO::setTitle('FlashVPS: '.__(Str::headline($lastSegment)));
-        SEO::opengraph()->setType('article');
-        SEO::opengraph()->setUrl($request->url());
-        SEO::setDescription(Str::of(strip_tags($content))
-            ->replace("\n", '. ')
-            ->replace('. . ', '. ')
-            ->replace('. . ', '. ')
-            ->limit(200, '...'));
+        // SEO::setTitle('FlashVPS: '.__(Str::headline($lastSegment)));
+        // SEO::opengraph()->setType('article');
+        // SEO::opengraph()->setUrl($request->url());
+        // SEO::setDescription(Str::of(strip_tags($content))
+        //     ->replace("\n", '. ')
+        //     ->replace('. . ', '. ')
+        //     ->replace('. . ', '. ')
+        //     ->limit(200, '...'));
 
         return view('docs::index', compact('content', 'menus'));
     }
