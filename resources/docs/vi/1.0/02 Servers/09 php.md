@@ -48,8 +48,12 @@ Bạn có thể gỡ cài đặt các phiên bản PHP thông qua tab [**Ứng d
 
 ## Chuyển đổi PHP Mặc định
 Phiên bản PHP 'mặc định' là phiên bản PHP sẽ được sử dụng theo mặc định khi tạo một trang web mới trên máy chủ.
-
+Các bước chuyển đổi:
+1. Tại bảng điều khiển quản lý máy chủ > Chọn `Phiên bản mặc định PHP`
+![](/vendor/docs/images/php-default-server-dashboard.png)
+2. Chọn phiên bản PHP muốn chuyển
 ![](/vendor/docs/images/php-default-version.png)
+3. Chọn `Cập nhật`
 
 Khi chọn một phiên bản PHP mới làm phiên bản 'mặc định' cho máy chủ của bạn, các phiên bản PHP được các trang web hiện có sử dụng sẽ không được cập nhật.
 
@@ -62,17 +66,21 @@ Khi chọn một phiên bản PHP mới làm phiên bản 'mặc định' cho m�
 <a id="markdown-kích-thước-tải-lên-tệp-tối-đa" name="kích-thước-tải-lên-tệp-tối-đa"></a>
 
 ### Kích thước tải lên tệp tối đa
-Bạn có thể thiết lập cấu hình kích thước tải lên tệp tối đa thông qua tab **PHP** của bảng điều khiển quản lý máy chủ. Giá trị này phải được cung cấp bằng megabyte. Để tham khảo, `1024MB` là `1GB`.
-![](/vendor/docs/images/php-max-upload-file-size.png)
+Bạn có thể thiết lập cấu hình kích thước tải lên tệp tối đa tại bảng điều khiển quản lý máy chủ. Giá trị được cung cấp tính theo đơn vị megabyte. Để tham khảo, `1024MB` là `1GB`.
+![](/vendor/docs/images/php-upload-max-file-size-server-dashboard.png)
+
 
 <a id="markdown-thời-gian-thưc-thi-tối-đa" name="thời-gian-thưc-thi-tối-đa"></a>
 
 ### Thời gian thực thi tối đa
-Bạn có thể định cấu hình thời gian thực thi tối đa thông qua tab **PHP** của bảng điều khiển quản lý máy chủ. Giá trị này sẽ được cung cấp theo đơn vị `giây`.
-![](/vendor/docs/images/php-max-execution-time.png)
+Bạn có thể định cấu hình thời gian thực thi tối đa tại bảng điều khiển quản lý máy chủ. Giá trị được cung cấp tính theo theo đơn vị `giây`.
+![](/vendor/docs/images/php-max-execution-time-server-dashboard.png)
 
 <a id="markdown-opcache" name="opcache"></a>
 
 ### OPcache
-Việc tối ưu hóa OPcache PHP cho sản xuất(production) sẽ cấu hình OPcache để lưu trữ mã PHP đã biên dịch của bạn trong bộ nhớ để cải thiện đáng kể hiệu suất. Nếu bạn chọn tối ưu hóa OPcache cho sản xuất(production), bạn nên xác minh rằng tập lệnh triển khai của bạn [**tải lại dịch vụ PHP-FPM**](/docs/vi/1.0/cookbook#restarting-php-fpm) vào cuối mỗi lần triển khai.
-![](/vendor/docs/images/php-opcache.png)
+Việc tối ưu hóa OPcache PHP cho sản xuất(production) sẽ cấu hình OPcache để lưu trữ mã PHP đã biên dịch của bạn trong bộ nhớ để cải thiện đáng kể hiệu suất. Nếu bạn chọn tối ưu hóa OPcache cho sản xuất(production), bạn nên xác minh rằng tập lệnh triển khai của bạn [**khởi động lại dịch vụ PHP-FPM**](/docs/vi/1.0/cookbook#restarting-php-fpm) vào cuối mỗi lần triển khai.
+
+Bật PHPOpcache tại bảng điều khiển quản lý máy chủ
+![](/vendor/docs/images/php-opcache-server-dashboard.png)
+

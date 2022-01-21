@@ -65,9 +65,13 @@ Lựa chọn phiên bản **php8.0 hoặc thấp hơn** thay thế.
    Điền thông tin trang web và chọn `Tạo trang web`
    ![](/vendor/docs/images/phpmyadmin-create-new-site.png)
 
-3. **Cài đặt phpMyAdmin**: Bạn đi tới trang web vừa được tạo.
-   Sau đó chọn vào tab `Mã nguồn` > `phpMyAdmin` và chọn `Cài đặt phpMyAdmin`
-   ![](/vendor/docs/images/phpmyadmin-site-install-phpmyadmin.png)
+3. **Cài đặt phpMyAdmin**: Bạn đi tới bảng quản lý trang web.
+   ![](/vendor/docs/images/site-dashboard.png)
+   ![](/vendor/docs/images/code-install-site-dashboard.png)
+  Sau đó chọn tùy chọn cài đặt mã nguồn phpMyAdmin
+  ![](/vendor/docs/images/source-code-phpmyadmin.png)
+
+4. Chọn `Cài đặt phpMyAdmin`
 
    FlashVPS sẽ tiến hành cài đặt giúp bạn, Quá trình cài đặt sẽ mất 1-2 phút. Sau đó bạn chỉ việc truy cập vào trang web và nếu bạn thấy giao diện như hình dưới là đã thành công.
    Bạn nhập username và password mà FlashVPS đã gửi cho bạn qua mail khi bạn tạo máy chủ. Hoặc bạn cũng có thể đi đến tab `Cơ sở dữ liệu` > và tạo username,password mới.
@@ -85,10 +89,9 @@ Lựa chọn phiên bản **php8.0 hoặc thấp hơn** thay thế.
 ### Khi import file với dung lượng lớn
 
 - Khi import file với dung lượng lớn sẽ mất nhiều thời gian xử lý
-- Bạn quay lại [FlashVPS](/servers) và thiết lập thêm 1 vài thông số tại tab `PHP` để việc import file thực hiện thành công:
-  - Thiết lập `Kích thước file tải lên tối đa` (MB)
-  - Thiết lập `thời gian thực thi`
-    ![](/vendor/docs/images/phpmyadmin-config-php.png)
+- Bạn quay lại [FlashVPS](/servers) và thiết lập thêm 1 vài thông số tại bảng quản lý máy chủ để việc import file thực hiện thành công:
+  - Thiết lập [`Kích thước file tải lên tối đa`](/docs/vi/1.0/php#kích-thước-tải-lên-tệp-tối-đa) (MB)
+  - Thiết lập [`thời gian thực thi`](/docs/vi/1.0/php#thời-gian-thưc-thi-tối-đa)
 
 <a id="markdown-một-số-thao-tác-cơ-bản-trên-phpmyadmin" name="một-số-thao-tác-cơ-bản-trên-phpmyadmin"></a>
 

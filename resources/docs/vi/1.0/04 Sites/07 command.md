@@ -19,9 +19,12 @@ Bạn có thể thực hiện các lệnh Bash tùy ý từ bảng Lệnh. Các 
 <a id="markdown-chạy-lệnh" name="chạy-lệnh"></a>
 
 ## Chạy lệnh
-Các lệnh có thể được thực thi từ tab Câu Lệnh của trang web.
+Các bước để thực thi 1 câu lệnh:
+1. Tại bảng quản lý trang web
+![](/vendor/docs/images/site-dashboard.png)
+2. Tìm kiếm với từ khóa `thực thi câu lệnh` >> Chọn tab `Thực thi câu lệnh`
 ![](/vendor/docs/images/site-command-01.png)
-![](/vendor/docs/images/site-command-02.png)
+3. Nhập câu lệnh muốn thực thi > Chọn `Thực thi`
 
 > **! Command Input**
 > Các lệnh không được thực thi trong tty, có nghĩa là không thể cung cấp đầu vào / mật khẩu (which means that input / passwords cannot be provided.).
@@ -30,7 +33,8 @@ Các lệnh có thể được thực thi từ tab Câu Lệnh của trang web.
 
 ## Lịch sử câu lệnh
 FlashVPS hiển thị lịch sử câu lệnh dưới dạng bảng, mặc đĩnh sẽ hiển thị 10 câu lệnh mới nhất đã được thực hiện. 
-![](/vendor/docs/images/site-command-03.png)
+![](/vendor/docs/images/site-command-history-01.png)
+![](/vendor/docs/images/site-command-history-02.png)
 Từ bảng Lịch sử Lệnh, bạn cũng có thể xem kết quả đầu ra của lệnh và chạy lại lệnh.
 
 <a id="markdown-recipes" name="recipes"></a>
