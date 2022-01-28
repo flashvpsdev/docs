@@ -33,7 +33,7 @@ class IndexController extends Controller
             ->keyBy(function ($dir) {
                 return __((string) Str::of(basename($dir))->substr(3));
             })->map(function ($dir) use ($startDir) {
-                return collect(File::files($dir))->map(function (SplFileInfo $f) use ($dir, $startDir) {
+                return collect(File::files($dir))->map(function (SplFileInfo $f) use ($startDir) {
                     $name = Str::of($f->getFilenameWithoutExtension())->substr(3);
 
                     return [
