@@ -14,22 +14,47 @@
 ## Sao lưu đến Google Drive
 
 Để quá trình cấu hình diễn ra suôn sẻ bạn cần chuẩn bị những thứ sau đây:
-
 1. Một tài khoản Google Drive chuyên dùng để sao lưu dữ liệu
-2. Đã đăng nhập vào tài khoản
-3. Mở hoặc dán liên kết này vào trình duyệt <a href="https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=202264815644.apps.googleusercontent.com&redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=code&scope=https://www.googleapis.com/auth/drive" target="_blank" rel="noopener noreferrer">Kết nối với Google Drive</a>
-4. Chọn tài khoản Google sẽ sao lưu vào:
+2. Cài Rclone và lấy Google Drive Token
+
+   1. **Trên Windows**
+
+      Tải phần mềm Rclone 64bit hoặc 32bit về máy tại địa chỉ https://rclone.org/downloads/
+      ![](/vendor/docs/images/rclone-download.png)
+      Sau đó giải nén file zip tải được ở trên ta có file rclone.exe, giả sử nằm ở thư mục `D:\Rclone\rclone.exe`
+      Mở ứng dụng CMD của Windows (Run- CMD) rồi chạy lệnh sau:
+
+      ```
+      D:\Rclone\rclone.exe authorize "drive"
+      ```
+
+      Đừng quên thay `D:\Rclone\rclone.exe` thành đường dẫn tương ứng trên máy bạn nhé!
+      Một trình duyệt sẽ mở ra, tới bước 3
+
+   2. **Trên Linux/macOS/BSD**
+
+      Mở ứng terminal rồi chạy lệnh để cài đặt (lưu ý nhập sudo password):
+
+      ```
+      curl https://rclone.org/install.sh -o rclone.sh;sudo bash rclone.sh;rm rclone.sh
+
+      rclone authorize "drive"
+      ```
+
+      Một trình duyệt sẽ mở ra, tới bước 3
+
+3. Chọn tài khoản Google sẽ sao lưu vào:
    ![](/vendor/docs/images/googledrive01.png)
-5. Cho phép kết nối vào tài khoản của bạn:
+4. Cho phép kết nối vào tài khoản của bạn:
    ![](/vendor/docs/images/googledrive02.png)
-6. Vui lòng sao chép mã nãy này lại.
-   ![](/vendor/docs/images/googledrive03.png)
-7. Truy vào [trang quản lý máy chủ](https://flashvps.dev/servers) và chọn máy chủ cần sao lưu, sau đó ấn vào tab "Sao lưu"
-8. Chọn Google Drive
-   ![](/vendor/docs/images/backup-list.png)
-9. Ở ô memo bạn hãy nhập mô tả gì đó để ghi chú, ở ô thứ 2 là "Backup Google Drive Code" bạn hãy nhập mã đã sao chép được ở bước số 6
+5. Quay lại terminal/cmd ở bước 2, bạn sẽ thấy một đoạn mã như hình bên dưới, vui lòng sao chép mã này lại:
+   ![](/vendor/docs/images/rclone-ggdrive-config-token.png)
+6. Truy vào [trang quản lý máy chủ](https://flashvps.dev/servers) và chọn máy chủ cần sao lưu, sau đó ấn vào tab "Sao lưu"
+7. Chọn Google Drive
+  ![](/vendor/docs/images/backup-list.png)
+8. Ở ô memo bạn hãy nhập mô tả gì đó để ghi chú, ở ô thứ 2 là "Backup Google Drive Code" bạn hãy nhập mã đã sao chép được ở bước số 5
    ![](/vendor/docs/images/googledrive05.png)
-10. Ấn lưu để hoàn tất.
+9. Ấn lưu để hoàn tất.
 
 <a id="markdown-sao-lưu-đến-onedrive" name="sao-lưu-đến-onedrive"></a>
 
