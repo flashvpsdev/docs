@@ -43,14 +43,14 @@ class IndexController extends Controller
                 });
             });
 
-        SEO::setTitle('FlashVPS: '.__(Str::headline($lastSegment)));
-        SEO::opengraph()->setType('article');
-        SEO::opengraph()->setUrl($request->url());
-        SEO::setDescription(Str::of(strip_tags($content))
-            ->replace("\n", '. ')
-            ->replace('. . ', '. ')
-            ->replace('. . ', '. ')
-            ->limit(200, '...'));
+        // SEO::setTitle('FlashVPS: '.__(Str::headline($lastSegment)));
+        // SEO::opengraph()->setType('article');
+        // SEO::opengraph()->setUrl($request->url());
+        // SEO::setDescription(Str::of(strip_tags($content))
+        //     ->replace("\n", '. ')
+        //     ->replace('. . ', '. ')
+        //     ->replace('. . ', '. ')
+        //     ->limit(200, '...'));
 
         return view('docs::index', compact('content', 'menus'));
     }
